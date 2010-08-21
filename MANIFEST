@@ -1,0 +1,16 @@
+Build.PL
+Changes
+ignore.txt
+lib/Pod/Weaver/PluginBundle/ReplaceBoilerplate.pm
+lib/Pod/Weaver/Section/ReplaceAuthors.pm
+lib/Pod/Weaver/Section/ReplaceLegal.pm
+lib/Pod/Weaver/Section/ReplaceName.pm
+lib/Pod/Weaver/Section/ReplaceVersion.pm
+MANIFEST			This list of files
+META.yml
+README
+t/00-load.t
+t/boilerplate.t
+t/manifest.t
+t/pod-coverage.t
+t/pod.t

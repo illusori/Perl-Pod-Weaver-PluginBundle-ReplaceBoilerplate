@@ -1,0 +1,25 @@
+use strict;
+use warnings;
+use Module::Build;
+
+my $builder = Module::Build->new(
+    module_name         => 'Pod::Weaver::PluginBundle::ReplaceBoilerplate',
+    license             => 'perl',
+    dist_author         => q{Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>},
+    dist_version_from   => 'lib/Pod/Weaver/PluginBundle/ReplaceBoilerplate.pm',
+    build_requires => {
+        'Test::More' => 0,
+    },
+    add_to_cleanup      => [ 'Pod-Weaver-PluginBundle-ReplaceBoilerplate-*' ],
+    requires       => {
+        'Moose'          => 0,
+        'Moose::Autobox' => 0,
+        'Pod::Elemental' => 0,
+        'Pod::Weaver'    => 0,
+        'Pod::Weaver::Role::SectionReplacer' => 0,
+    },
+    sign => 1,
+    dynamic_config => 0,
+);
+
+$builder->create_build_script();
