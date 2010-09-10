@@ -9,6 +9,25 @@ with 'Pod::Weaver::Role::SectionReplacer';
 
 our $VERSION = '0.99_01';
 
+has year => (
+  is  => 'ro',
+  isa => 'Str',
+  );
+
+around weave_section => sub
+{
+    my ( $orig, $self, $document, $input ) = @_;
+
+    if( my $year = $self->year )
+    {
+        return unless $input->{license};
+        $year =~ s/current/(localtime)[ 5 ] + 1900/e;
+        $input->{ license }->{ year } = $year;
+    }
+
+    return( $self->$orig( $document, $input ) );
+};
+
 sub default_section_name { 'COPYRIGHT AND LICENSE' }
 sub default_section_aliases
 {
@@ -49,9 +68,31 @@ information for the document, like this:
 This plugin will do nothing if no C<license> input parameter is available.  The
 C<license> is expected to be a L<Software::License> object.
 
-=head1 NAME
+=head1 CUSTOMIZATION
 
-Pod::Weaver::Section::ReplaceLegal - add or replace a section for the copyright and license
+You may customize the behaviour of L<Pod::Weaver::Section::ReplaceLegal>
+with the following options in your C<weaver.ini>:
+
+=over
+
+=item B<year> = I<year string>
+
+You may supply a copyright year, to be used by L<Software::License> via the
+C<year> parameter.
+
+The year may be a number or it may be an arbitrary string.
+
+Within any string the word 'current' will be replaced by the current year.
+
+For example in your C<weaver.ini>:
+
+  [ReplaceLegal]
+  year = 2005-current
+
+This will, in the year 2010, produce the year string 2005-2010 for use
+within the L<Software::License> object.
+
+=back
 
 =head1 AUTHOR
 
