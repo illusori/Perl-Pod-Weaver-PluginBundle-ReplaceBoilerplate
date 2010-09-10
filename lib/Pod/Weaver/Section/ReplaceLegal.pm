@@ -1,6 +1,6 @@
 package Pod::Weaver::Section::ReplaceLegal;
 
-# ABSTRACT: add or replace a section for the copyright and license
+# ABSTRACT: add or replace a section for the copyright and license.
 
 use Moose;
 
@@ -48,7 +48,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::ReplaceLegal - add or replace a section for the copyright and license
+Pod::Weaver::Section::ReplaceLegal - add or replace a section for the copyright and license.
 
 =head1 VERSION
 
@@ -96,11 +96,11 @@ within the L<Software::License> object.
 
 =head1 AUTHOR
 
-Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>
+Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>.
+This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

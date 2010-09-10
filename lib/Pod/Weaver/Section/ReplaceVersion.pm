@@ -2,7 +2,7 @@ package Pod::Weaver::Section::ReplaceVersion;
 
 use Moose;
 
-# ABSTRACT: replace a VERSION pod section
+# ABSTRACT: replace a VERSION pod section.
 
 extends 'Pod::Weaver::Section::Version';
 with 'Pod::Weaver::Role::SectionReplacer';
@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::ReplaceVersion - replace a VERSION pod section
+Pod::Weaver::Section::ReplaceVersion - replace a VERSION pod section.
 
 =head1 VERSION
 
@@ -38,17 +38,13 @@ the document being viewed, like this:
 
 It will do nothing if there is no C<version> entry in the input.
 
-=head1 NAME
-
-Pod::Weaver::Section::ReplaceVersion - replace a VERSION pod section
-
 =head1 AUTHOR
 
-Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>
+Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>.
+This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

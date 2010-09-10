@@ -1,6 +1,6 @@
 package Pod::Weaver::PluginBundle::ReplaceBoilerplate;
 
-# ABSTRACT: a bundle for replacing the boilerplate in a pod document
+# ABSTRACT: a bundle for replacing the boilerplate in a pod document.
 
 use strict;
 use warnings;
@@ -34,7 +34,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::PluginBundle::ReplaceBoilerplate - a bundle for replacing the boilerplate in a pod document
+Pod::Weaver::PluginBundle::ReplaceBoilerplate - a bundle for replacing the boilerplate in a pod document.
 
 =head1 VERSION
 
@@ -42,9 +42,8 @@ version 0.99_01
 
 =head1 OVERVIEW
 
-FIXME: This is the bundle used by default (specifically by Pod::Weaver's
-C<new_with_default_config> method).  It may change over time, but should remain
-fairly conservative and straightforward.
+This is a plugin bundle intended to replace use of [@Default] with equivilent
+behaviour but with L<Pod::Weaver::Role::SectionReplacer> enabled plugins.
 
 It is nearly equivalent to the following:
 
@@ -58,17 +57,13 @@ It is nearly equivalent to the following:
   [ReplaceAuthors]
   [ReplaceLegal]
 
-=head1 NAME
-
-Pod::Weaver::PluginBundle::ReplaceBoilerplate - a bundle for replacing the boilerplate in a pod document
-
 =head1 AUTHOR
 
-Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>
+Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>.
+This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

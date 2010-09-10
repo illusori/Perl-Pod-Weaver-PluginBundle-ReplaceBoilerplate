@@ -1,6 +1,6 @@
 package Pod::Weaver::Section::ReplaceAuthors;
 
-# ABSTRACT: replace a section listing authors
+# ABSTRACT: replace a section listing authors.
 
 use Moose;
 
@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::ReplaceAuthors - replace a section listing authors
+Pod::Weaver::Section::ReplaceAuthors - replace a section listing authors.
 
 =head1 VERSION
 
@@ -38,17 +38,13 @@ given, it will do nothing.  Otherwise, it produces a hunk like this:
     Author One <a1@example.com>
     Author Two <a2@example.com>
 
-=head1 NAME
-
-Pod::Weaver::Section::ReplaceAuthors - replace a section listing authors
-
 =head1 AUTHOR
 
-Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>
+Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>.
+This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

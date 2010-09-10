@@ -6,11 +6,16 @@ lib/Pod/Weaver/Section/ReplaceAuthors.pm
 lib/Pod/Weaver/Section/ReplaceLegal.pm
 lib/Pod/Weaver/Section/ReplaceName.pm
 lib/Pod/Weaver/Section/ReplaceVersion.pm
-MANIFEST			This list of files
+MANIFEST
 META.yml
 README
 t/00-load.t
+t/90-check-changes.t
+t/91-fixme.t
+t/92-hasversion.t
+t/93-meta.t
+t/94-minimumversion.t
+t/95-manifest.t
+t/98-pod.t
+t/99-pod-coverage.t
 t/boilerplate.t
-t/manifest.t
-t/pod-coverage.t
-t/pod.t
