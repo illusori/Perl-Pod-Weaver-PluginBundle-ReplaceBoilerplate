@@ -10,7 +10,14 @@ with 'Pod::Weaver::Role::SectionReplacer';
 our $VERSION = '0.99_01';
 
 sub default_section_name { 'COPYRIGHT AND LICENSE' }
-sub default_section_aliases { [ 'LICENSE AND COPYRIGHT' ] }
+sub default_section_aliases
+{
+    [
+        'LICENSE AND COPYRIGHT',
+        'LICENSE & COPYRIGHT',
+        'COPYRIGHT & LICENSE',
+    ]
+}
 
 no Moose;
 1;
