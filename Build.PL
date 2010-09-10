@@ -18,6 +18,11 @@ my $builder = Module::Build->new(
         'Pod::Weaver'    => 0,
         'Pod::Weaver::Role::SectionReplacer' => 0,
     },
+    meta_merge => {
+        'resources' => {
+            'repository' => 'http://github.com/illusori/Perl-Pod-Weaver-PluginBundle-ReplaceBoilerplate',
+            },
+        },
     sign => 1,
     dynamic_config => 0,
 );

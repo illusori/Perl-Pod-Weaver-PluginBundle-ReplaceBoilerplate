@@ -13,6 +13,22 @@ meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Pod-Weaver-PluginBundle-ReplaceBoilerplate
+provides:
+  Pod::Weaver::PluginBundle::ReplaceBoilerplate:
+    file: lib/Pod/Weaver/PluginBundle/ReplaceBoilerplate.pm
+    version: 0.99_01
+  Pod::Weaver::Section::ReplaceAuthors:
+    file: lib/Pod/Weaver/Section/ReplaceAuthors.pm
+    version: 0.99_01
+  Pod::Weaver::Section::ReplaceLegal:
+    file: lib/Pod/Weaver/Section/ReplaceLegal.pm
+    version: 0.99_01
+  Pod::Weaver::Section::ReplaceName:
+    file: lib/Pod/Weaver/Section/ReplaceName.pm
+    version: 0.99_01
+  Pod::Weaver::Section::ReplaceVersion:
+    file: lib/Pod/Weaver/Section/ReplaceVersion.pm
+    version: 0.99_01
 requires:
   Moose: 0
   Moose::Autobox: 0
@@ -21,4 +37,5 @@ requires:
   Pod::Weaver::Role::SectionReplacer: 0
 resources:
   license: http://dev.perl.org/licenses/
+  repository: http://github.com/illusori/Perl-Pod-Weaver-PluginBundle-ReplaceBoilerplate
 version: 0.99_01
