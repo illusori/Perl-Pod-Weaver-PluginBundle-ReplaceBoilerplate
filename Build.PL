@@ -23,6 +23,7 @@ my $builder = Module::Build->new(
             'repository' => 'http://github.com/illusori/Perl-Pod-Weaver-PluginBundle-ReplaceBoilerplate',
             },
         },
+    create_readme => 1,
     sign => 1,
     dynamic_config => 0,
 );

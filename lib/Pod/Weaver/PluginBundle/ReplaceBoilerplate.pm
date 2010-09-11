@@ -29,7 +29,6 @@ sub mvp_bundle_config {
 
 __END__
 
-
 =pod
 
 =head1 NAME
@@ -39,6 +38,19 @@ Pod::Weaver::PluginBundle::ReplaceBoilerplate - a bundle for replacing the boile
 =head1 VERSION
 
 version 0.99_01
+
+=begin readme
+
+=head1 INSTALLATION
+
+To install this module, run the following commands:
+
+  perl Build.PL
+  ./Build
+  ./Build test
+  ./Build install
+
+=end readme
 
 =head1 OVERVIEW
 
@@ -56,6 +68,35 @@ It is nearly equivalent to the following:
 
   [ReplaceAuthors]
   [ReplaceLegal]
+
+=head1 SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+  perldoc Pod::Weaver::PluginBundle::ReplaceBoilerplate
+
+You can also look for information at:
+
+=over
+
+=item RT, CPAN's request tracker
+
+http://rt.cpan.org/NoAuth/Bugs.html?Dist=Pod-Weaver-PluginBundle-ReplaceBoilerplate
+
+=item AnnoCPAN, Annotated CPAN documentation
+
+http://annocpan.org/dist/Pod-Weaver-PluginBundle-ReplaceBoilerplate
+
+=item CPAN Ratings
+
+http://cpanratings.perl.org/d/Pod-Weaver-PluginBundle-ReplaceBoilerplate
+
+=item Search CPAN
+
+http://search.cpan.org/dist/Pod-Weaver-PluginBundle-ReplaceBoilerplate/
+
+=back
 
 =head1 AUTHOR
 

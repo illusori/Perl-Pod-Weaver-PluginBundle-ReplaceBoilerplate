@@ -1,5 +1,5 @@
 ---
-abstract: 'a bundle for replacing the boilerplate in a pod document'
+abstract: 'a bundle for replacing the boilerplate in a pod document.'
 author:
   - 'Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>'
 build_requires:
