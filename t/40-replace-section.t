@@ -14,7 +14,7 @@ use Pod::Elemental::Selectors -all;
 use Pod::Elemental::Transformer::Pod5;
 use Pod::Elemental::Transformer::Nester;
 
-use Software::License::GPL_1;
+use Software::License::Perl_5;
 
 use Pod::Weaver;
 
@@ -43,7 +43,7 @@ my @sections = (
         'COPYRIGHT AND LICENSE',
         "License, you must be bleedin' joking?",
         "This will confuse the lawyers.",
-        "{{GPL}}",
+        "{{LICENSE}}",
     ],
     );
 
@@ -56,9 +56,7 @@ my @tests = (
 my $tests_per_test = 2;
 
 plan tests => (
-    ( scalar( @sections ) * scalar( @tests ) * $tests_per_test ) -
-    #  ReplaceLegal skips the structure tests.
-    ( scalar( @tests ) )
+    ( scalar( @sections ) * scalar( @tests ) * $tests_per_test )
     );
 
 my $perl_document = <<'END_OF_PERL';
@@ -68,7 +66,7 @@ package Module::Name;
 my $this = 'a test';
 END_OF_PERL
 
-my $license = Software::License::GPL_1->new( {
+my $license = Software::License::Perl_5->new( {
     holder => 'Sam Graham',
     } );
 my $license_text = $license->notice();
@@ -102,7 +100,7 @@ foreach my $section ( @sections )
             s/\{\{SECTION\}\}/$original_section/;
             s/\{\{DUPE SECTION\}\}/$duplicate_section/;
             s/\{\{NEW SECTION\}\}/$replacement_section/;
-            s/\{\{GPL\}\}/$license_text/;
+            s/\{\{LICENSE\}\}/$license_text/;
         }
 
         my $pod_document = Pod::Elemental->read_string( $in_pod );
@@ -135,17 +133,42 @@ foreach my $section ( @sections )
         #  ReplaceLegal inserts entire license block as single
         #  Pod::Elemental::Element::Pod5::Ordinary rather than
         #  one-per-paragraph, so won't match the same structure
-        #  as if it were parsed.
-        unless( $section->[ 0 ] eq 'legal' )
+        #  as if it were parsed... we fudge the parsed structure
+        #  to merge the children of that section into a single para.
+        if( $section->[ 0 ] eq 'legal' )
         {
-            #
-            #  1:  Test the Pod::Elemental structure for the Pod.
-            eq_or_diff(
-                $woven_pod_document,
-                $expected_pod_document,
-                "$test_name pod structure correct",
-                );
+            my $command_selector = s_command('head1');
+            my $named_selector = sub {
+                my ( $node ) = @_;
+
+                my $content = $node->content;
+                $content =~ s/^\s+//;
+                $content =~ s/\s+$//;
+
+                return( $command_selector->( $_[ 0 ] ) &&
+                    $content eq 'COPYRIGHT AND LICENSE' );
+            };
+            my $license_node = $expected_pod_document->children->grep($named_selector)->first;
+            my $license_content = '';
+            foreach my $child_node ( @{$license_node->children} )
+            {
+                $license_content .= $child_node->as_pod_string;
+            }
+            chomp( $license_content );
+            $license_node->children( [
+                Pod::Elemental::Element::Pod5::Ordinary->new( {
+                    content => $license_content,
+                    } ) ] );
         }
+
+
+        #
+        #  1:  Test the Pod::Elemental structure for the Pod.
+        eq_or_diff(
+            $woven_pod_document,
+            $expected_pod_document,
+            "$test_name pod structure correct",
+            );
 
         #
         #  2:  Test the Pod as a string is the expected.
