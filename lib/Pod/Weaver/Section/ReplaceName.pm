@@ -43,7 +43,7 @@ comment in this form:
 
 =for readme stop
 
-=begin internal
+=begin :internal
 
 =head1 INTERNAL METHODS
 
@@ -52,9 +52,10 @@ comment in this form:
 =item default_section_name
 
 Gives the name used as the heading for this section.
+
 =back
 
-=end internal
+=end :internal
 
 =for readme continue
 

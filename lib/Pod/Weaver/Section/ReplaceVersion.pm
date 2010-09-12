@@ -40,7 +40,7 @@ It will do nothing if there is no C<version> entry in the input.
 
 =for readme stop
 
-=begin internal
+=begin :internal
 
 =head1 INTERNAL METHODS
 
@@ -49,9 +49,10 @@ It will do nothing if there is no C<version> entry in the input.
 =item default_section_name
 
 Gives the name used as the heading for this section.
+
 =back
 
-=end internal
+=end :internal
 
 =for readme continue
 

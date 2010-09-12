@@ -96,7 +96,7 @@ within the L<Software::License> object.
 
 =for readme stop
 
-=begin internal
+=begin :internal
 
 =head1 INTERNAL METHODS
 
@@ -105,12 +105,14 @@ within the L<Software::License> object.
 =item default_section_name
 
 Gives the name used as the heading for this section.
+
 =item default_section_aliases
 
 Gives alternative names that an existing section might be using.
+
 =back
 
-=end internal
+=end :internal
 
 =for readme continue
 

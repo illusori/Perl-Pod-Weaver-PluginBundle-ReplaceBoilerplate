@@ -71,7 +71,7 @@ To install this module, run the following commands:
 
 =for readme stop
 
-=begin internal
+=begin :internal
 
 =head1 INTERNAL METHODS
 
@@ -80,9 +80,10 @@ To install this module, run the following commands:
 =item mvp_bundle_config
 
 Returns the config data structure to substitute for this PluginBundle.
+
 =back
 
-=end internal
+=end :internal
 
 =for readme continue
 
