@@ -10,6 +10,7 @@ MANIFEST
 META.yml
 README
 t/00-load.t
+t/40-replace-section.t
 t/90-check-changes.t
 t/91-fixme.t
 t/92-hasversion.t
@@ -18,5 +19,14 @@ t/94-minimumversion.t
 t/95-manifest.t
 t/98-pod.t
 t/99-pod-coverage.t
-t/boilerplate.t
+t/test_files/40-replace-authors.ini
+t/test_files/40-replace-legal.ini
+t/test_files/40-replace-name.ini
+t/test_files/40-replace-section-with-dupe-section-name.in.pod
+t/test_files/40-replace-section-with-dupe-section-name.out.pod
+t/test_files/40-replace-section-with-section-name.in.pod
+t/test_files/40-replace-section-with-section-name.out.pod
+t/test_files/40-replace-section-without-section.in.pod
+t/test_files/40-replace-section-without-section.out.pod
+t/test_files/40-replace-version.ini
 weaver.ini
