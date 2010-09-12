@@ -1,6 +1,6 @@
 package Pod::Weaver::Section::ReplaceLegal;
 
-# ABSTRACT: add or replace a section for the copyright and license.
+# ABSTRACT: Add or replace a section for the copyright and license.
 
 use Moose;
 
@@ -48,7 +48,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::ReplaceLegal - add or replace a section for the copyright and license.
+Pod::Weaver::Section::ReplaceLegal - Add or replace a section for the copyright and license.
 
 =head1 VERSION
 

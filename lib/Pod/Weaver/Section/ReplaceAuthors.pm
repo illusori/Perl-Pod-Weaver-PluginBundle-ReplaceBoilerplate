@@ -1,6 +1,6 @@
 package Pod::Weaver::Section::ReplaceAuthors;
 
-# ABSTRACT: replace a section listing authors.
+# ABSTRACT: Replace a section listing authors.
 
 use Moose;
 
@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::ReplaceAuthors - replace a section listing authors.
+Pod::Weaver::Section::ReplaceAuthors - Replace a section listing authors.
 
 =head1 VERSION
 

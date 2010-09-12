@@ -1,6 +1,6 @@
 package Pod::Weaver::PluginBundle::ReplaceBoilerplate;
 
-# ABSTRACT: a bundle for replacing the boilerplate in a pod document.
+# ABSTRACT: A Pod::Weaver bundle for replacing the boilerplate in a Pod document.
 
 use strict;
 use warnings;
@@ -33,7 +33,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::PluginBundle::ReplaceBoilerplate - a bundle for replacing the boilerplate in a pod document.
+Pod::Weaver::PluginBundle::ReplaceBoilerplate - A Pod::Weaver bundle for replacing the boilerplate in a Pod document.
 
 =head1 VERSION
 

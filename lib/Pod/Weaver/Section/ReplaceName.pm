@@ -1,6 +1,6 @@
 package Pod::Weaver::Section::ReplaceName;
 
-# ABSTRACT: adds or replaces a NAME section with abstract.
+# ABSTRACT: Adds or replaces a NAME section with abstract.
 
 use Moose;
 
@@ -20,7 +20,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::ReplaceName - adds or replaces a NAME section with abstract.
+Pod::Weaver::Section::ReplaceName - Adds or replaces a NAME section with abstract.
 
 =head1 VERSION
 
