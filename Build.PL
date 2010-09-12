@@ -17,6 +17,7 @@ my $builder = Module::Build->new(
         'Pod::Elemental' => 0,
         'Pod::Weaver'    => 0,
         'Pod::Weaver::Role::SectionReplacer' => 0,
+        'Software::License' => 0,
     },
     meta_merge => {
         'resources' => {
