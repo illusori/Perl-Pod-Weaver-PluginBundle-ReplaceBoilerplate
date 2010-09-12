@@ -41,6 +41,23 @@ comment in this form:
 
   # ABSTRACT: a document for some
 
+=for readme stop
+
+=begin internal
+
+=head1 INTERNAL METHODS
+
+=over
+
+=item default_section_name
+
+Gives the name used as the heading for this section.
+=back
+
+=end internal
+
+=for readme continue
+
 =head1 AUTHOR
 
 Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>

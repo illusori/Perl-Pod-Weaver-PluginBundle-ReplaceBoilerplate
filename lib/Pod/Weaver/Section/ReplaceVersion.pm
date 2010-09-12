@@ -38,6 +38,23 @@ the document being viewed, like this:
 
 It will do nothing if there is no C<version> entry in the input.
 
+=for readme stop
+
+=begin internal
+
+=head1 INTERNAL METHODS
+
+=over
+
+=item default_section_name
+
+Gives the name used as the heading for this section.
+=back
+
+=end internal
+
+=for readme continue
+
 =head1 AUTHOR
 
 Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>

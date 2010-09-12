@@ -38,6 +38,26 @@ given, it will do nothing.  Otherwise, it produces a hunk like this:
     Author One <a1@example.com>
     Author Two <a2@example.com>
 
+=for readme stop
+
+=begin internal
+
+=head1 INTERNAL METHODS
+
+=over
+
+=item default_section_name
+
+Gives the name used as the heading for this section.
+=item default_section_aliases
+
+Gives alternative names that an existing section might be using.
+=back
+
+=end internal
+
+=for readme continue
+
 =head1 AUTHOR
 
 Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>

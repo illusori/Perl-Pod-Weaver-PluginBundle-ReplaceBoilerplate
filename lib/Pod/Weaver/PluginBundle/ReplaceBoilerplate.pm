@@ -69,6 +69,23 @@ To install this module, run the following commands:
 
 =end readme
 
+=for readme stop
+
+=begin internal
+
+=head1 INTERNAL METHODS
+
+=over
+
+=item mvp_bundle_config
+
+Returns the config data structure to substitute for this PluginBundle.
+=back
+
+=end internal
+
+=for readme continue
+
 =head1 SUPPORT AND DOCUMENTATION
 
 After installing, you can find documentation for this module with the
