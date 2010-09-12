@@ -39,19 +39,6 @@ Pod::Weaver::PluginBundle::ReplaceBoilerplate - a bundle for replacing the boile
 
 version 0.99_01
 
-=begin readme
-
-=head1 INSTALLATION
-
-To install this module, run the following commands:
-
-  perl Build.PL
-  ./Build
-  ./Build test
-  ./Build install
-
-=end readme
-
 =head1 OVERVIEW
 
 This is a plugin bundle intended to replace use of [@Default] with equivilent
@@ -68,6 +55,19 @@ It is nearly equivalent to the following:
 
   [ReplaceAuthors]
   [ReplaceLegal]
+
+=begin readme
+
+=head1 INSTALLATION
+
+To install this module, run the following commands:
+
+  perl Build.PL
+  ./Build
+  ./Build test
+  ./Build install
+
+=end readme
 
 =head1 SUPPORT AND DOCUMENTATION
 

@@ -5,14 +5,6 @@ NAME
 VERSION
     version 0.99_01
 
-INSTALLATION
-    To install this module, run the following commands:
-
-      perl Build.PL
-      ./Build
-      ./Build test
-      ./Build install
-
 OVERVIEW
     This is a plugin bundle intended to replace use of [@Default] with
     equivilent behaviour but with Pod::Weaver::Role::SectionReplacer enabled
@@ -29,6 +21,14 @@ OVERVIEW
 
       [ReplaceAuthors]
       [ReplaceLegal]
+
+INSTALLATION
+    To install this module, run the following commands:
+
+      perl Build.PL
+      ./Build
+      ./Build test
+      ./Build install
 
 SUPPORT AND DOCUMENTATION
     After installing, you can find documentation for this module with the
