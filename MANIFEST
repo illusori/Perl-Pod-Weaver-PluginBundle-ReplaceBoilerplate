@@ -19,3 +19,4 @@ t/95-manifest.t
 t/98-pod.t
 t/99-pod-coverage.t
 t/boilerplate.t
+weaver.ini
