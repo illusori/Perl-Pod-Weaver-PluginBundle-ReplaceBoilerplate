@@ -18,8 +18,6 @@ use Software::License::Perl_5;
 
 use Pod::Weaver;
 
-my $this_test_file = '40-replace-name';
-
 my @sections = (
     [ 'name'    => 'ReplaceName',
         'NAME',
