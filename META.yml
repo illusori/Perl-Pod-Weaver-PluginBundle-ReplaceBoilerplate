@@ -1,5 +1,5 @@
 ---
-abstract: 'a bundle for replacing the boilerplate in a pod document.'
+abstract: 'A Pod::Weaver bundle for replacing the boilerplate in a Pod document.'
 author:
   - 'Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl@illusori.co.uk>'
 build_requires:
@@ -35,6 +35,7 @@ requires:
   Pod::Elemental: 0
   Pod::Weaver: 0
   Pod::Weaver::Role::SectionReplacer: 0
+  Software::License: 0
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/illusori/Perl-Pod-Weaver-PluginBundle-ReplaceBoilerplate

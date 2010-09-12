@@ -1,6 +1,6 @@
 NAME
-    Pod::Weaver::PluginBundle::ReplaceBoilerplate - a bundle for replacing
-    the boilerplate in a pod document.
+    Pod::Weaver::PluginBundle::ReplaceBoilerplate - A Pod::Weaver bundle for
+    replacing the boilerplate in a Pod document.
 
 VERSION
     version 0.99_01
