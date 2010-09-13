@@ -56,7 +56,11 @@ version 0.99_02
 
 =head1 OVERVIEW
 
-This section plugin will produce a hunk of Pod giving the copyright and license
+This section plugin provides the same behaviour as
+L<Pod::Weaver::Section::Legal> but with the
+L<Pod::Weaver::Role::SectionReplacer> role applied.
+
+It will produce a hunk of Pod giving the copyright and license
 information for the document, like this:
 
   =head1 COPYRIGHT AND LICENSE
@@ -70,7 +74,8 @@ C<license> is expected to be a L<Software::License> object.
 
 =head1 CUSTOMIZATION
 
-You may customize the behaviour of L<Pod::Weaver::Section::ReplaceLegal>
+In addition to the standard L<Pod::Weaver::Section::Legal> behaviour,
+you may customize the behaviour of L<Pod::Weaver::Section::ReplaceLegal>
 with the following options in your C<weaver.ini>:
 
 =over

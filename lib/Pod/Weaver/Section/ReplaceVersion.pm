@@ -29,7 +29,11 @@ version 0.99_02
 
 =head1 OVERVIEW
 
-This section plugin will produce a hunk of Pod meant to indicate the version of
+This section plugin provides the same behaviour as
+L<Pod::Weaver::Section::Version> but with the
+L<Pod::Weaver::Role::SectionReplacer> role applied.
+
+It will produce a hunk of Pod meant to indicate the version of
 the document being viewed, like this:
 
   =head1 VERSION

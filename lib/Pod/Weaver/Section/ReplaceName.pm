@@ -28,6 +28,10 @@ version 0.99_02
 
 =head1 OVERVIEW
 
+This section plugin provides the same behaviour as
+L<Pod::Weaver::Section::Name> but with the
+L<Pod::Weaver::Role::SectionReplacer> role applied.
+
 This section plugin will produce a hunk of Pod giving the name of the document
 as well as an abstract, like this:
 
@@ -35,9 +39,9 @@ as well as an abstract, like this:
 
   Some::Document - a document for some
 
-It will determine the name and abstract by inspecting the C<ppi_document> which
-must be given.  It will look for the first package declaration, and for a
-comment in this form:
+It will determine the name and abstract by inspecting the C<ppi_document>
+input parameter.
+It will look for the first package declaration, and for a comment in this form:
 
   # ABSTRACT: a document for some
 
