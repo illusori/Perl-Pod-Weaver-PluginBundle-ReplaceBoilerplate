@@ -2,7 +2,7 @@ package Pod::Weaver::Section::ReplaceVersion;
 
 use Moose;
 
-# ABSTRACT: Replace a VERSION pod section.
+# ABSTRACT: Add or replace a VERSION section.
 
 extends 'Pod::Weaver::Section::Version';
 with 'Pod::Weaver::Role::SectionReplacer';
@@ -21,7 +21,7 @@ __END__
 
 =head1 NAME
 
-Pod::Weaver::Section::ReplaceVersion - Replace a VERSION pod section.
+Pod::Weaver::Section::ReplaceVersion - Add or replace a VERSION section.
 
 =head1 VERSION
 
