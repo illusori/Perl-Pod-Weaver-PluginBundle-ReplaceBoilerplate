@@ -7,7 +7,7 @@ use Moose;
 extends 'Pod::Weaver::Section::Legal';
 with 'Pod::Weaver::Role::SectionReplacer';
 
-our $VERSION = '0.99_01';
+our $VERSION = '0.99_02';
 
 has year => (
   is  => 'ro',
@@ -52,7 +52,7 @@ Pod::Weaver::Section::ReplaceLegal - Add or replace a section for the copyright 
 
 =head1 VERSION
 
-version 0.99_01
+version 0.99_02
 
 =head1 OVERVIEW
 

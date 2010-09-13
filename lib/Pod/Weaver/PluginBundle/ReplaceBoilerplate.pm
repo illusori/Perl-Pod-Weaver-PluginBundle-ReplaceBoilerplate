@@ -7,7 +7,7 @@ use warnings;
 
 use namespace::autoclean;
 
-our $VERSION = '0.99_01';
+our $VERSION = '0.99_02';
 
 use Pod::Weaver::Config::Assembler;
 sub _exp { Pod::Weaver::Config::Assembler->expand_package($_[0]) }
@@ -37,7 +37,7 @@ Pod::Weaver::PluginBundle::ReplaceBoilerplate - A Pod::Weaver bundle for replaci
 
 =head1 VERSION
 
-version 0.99_01
+version 0.99_02
 
 =head1 OVERVIEW
 

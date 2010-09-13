@@ -7,7 +7,7 @@ use Moose;
 extends 'Pod::Weaver::Section::Name';
 with 'Pod::Weaver::Role::SectionReplacer';
 
-our $VERSION = '0.99_01';
+our $VERSION = '0.99_02';
 
 sub default_section_name { 'NAME' }
 
@@ -24,7 +24,7 @@ Pod::Weaver::Section::ReplaceName - Adds or replaces a NAME section with abstrac
 
 =head1 VERSION
 
-version 0.99_01
+version 0.99_02
 
 =head1 OVERVIEW
 

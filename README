@@ -3,7 +3,7 @@ NAME
     replacing the boilerplate in a Pod document.
 
 VERSION
-    version 0.99_01
+    version 0.99_02
 
 OVERVIEW
     This is a plugin bundle intended to replace use of [@Default] with
