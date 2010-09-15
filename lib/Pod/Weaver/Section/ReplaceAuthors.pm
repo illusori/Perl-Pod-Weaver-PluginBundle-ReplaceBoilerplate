@@ -7,7 +7,7 @@ use Moose;
 extends 'Pod::Weaver::Section::Authors';
 with 'Pod::Weaver::Role::SectionReplacer';
 
-our $VERSION = '0.99_02';
+our $VERSION = '1.00';
 
 sub default_section_name { 'AUTHORS' }
 sub default_section_aliases { [ 'AUTHOR' ] }
@@ -25,7 +25,7 @@ Pod::Weaver::Section::ReplaceAuthors - Add or replace an AUTHOR or AUTHORS secti
 
 =head1 VERSION
 
-version 0.99_02
+version 1.00
 
 =head1 OVERVIEW
 

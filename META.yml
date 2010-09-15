@@ -16,19 +16,19 @@ name: Pod-Weaver-PluginBundle-ReplaceBoilerplate
 provides:
   Pod::Weaver::PluginBundle::ReplaceBoilerplate:
     file: lib/Pod/Weaver/PluginBundle/ReplaceBoilerplate.pm
-    version: 0.99_02
+    version: 1.00
   Pod::Weaver::Section::ReplaceAuthors:
     file: lib/Pod/Weaver/Section/ReplaceAuthors.pm
-    version: 0.99_02
+    version: 1.00
   Pod::Weaver::Section::ReplaceLegal:
     file: lib/Pod/Weaver/Section/ReplaceLegal.pm
-    version: 0.99_02
+    version: 1.00
   Pod::Weaver::Section::ReplaceName:
     file: lib/Pod/Weaver/Section/ReplaceName.pm
-    version: 0.99_02
+    version: 1.00
   Pod::Weaver::Section::ReplaceVersion:
     file: lib/Pod/Weaver/Section/ReplaceVersion.pm
-    version: 0.99_02
+    version: 1.00
 requires:
   Moose: 0
   Moose::Autobox: 0.11
@@ -39,4 +39,4 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/illusori/Perl-Pod-Weaver-PluginBundle-ReplaceBoilerplate
-version: 0.99_02
+version: 1.00
