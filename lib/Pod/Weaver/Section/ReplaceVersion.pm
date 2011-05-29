@@ -58,6 +58,14 @@ Gives the name used as the heading for this section.
 
 =end :internal
 
+=head1 SEE ALSO
+
+L<Pod::Weaver>, L<App::podweaver>,
+L<Pod::Weaver::PluginBundle::ReplaceBoilerplate>,
+L<Pod::Weaver::Section::ReplaceName>,
+L<Pod::Weaver::Section::ReplaceAuthors>,
+L<Pod::Weaver::Section::ReplaceLegal>.
+
 =for readme continue
 
 =head1 AUTHOR

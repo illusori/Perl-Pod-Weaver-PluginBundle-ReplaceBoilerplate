@@ -85,6 +85,15 @@ Returns the config data structure to substitute for this PluginBundle.
 
 =end :internal
 
+=head1 SEE ALSO
+
+L<Pod::Weaver>, L<App::podweaver>,
+L<Pod::Weaver::Section::ReplaceName>,
+L<Pod::Weaver::Section::ReplaceVersion>,
+L<Pod::Weaver::Section::ReplaceAuthors>,
+L<Pod::Weaver::Section::ReplaceLegal>,
+L<Pod::Weaver::Role::SectionReplacer>.
+
 =for readme continue
 
 =head1 SUPPORT AND DOCUMENTATION

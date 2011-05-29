@@ -119,6 +119,14 @@ Gives alternative names that an existing section might be using.
 
 =end :internal
 
+=head1 SEE ALSO
+
+L<Pod::Weaver>, L<App::podweaver>,
+L<Pod::Weaver::PluginBundle::ReplaceBoilerplate>,
+L<Pod::Weaver::Section::ReplaceName>,
+L<Pod::Weaver::Section::ReplaceVersion>,
+L<Pod::Weaver::Section::ReplaceAuthors>.
+
 =for readme continue
 
 =head1 AUTHOR
