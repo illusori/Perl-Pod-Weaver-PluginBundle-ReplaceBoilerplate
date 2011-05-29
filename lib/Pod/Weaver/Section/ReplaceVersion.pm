@@ -74,7 +74,7 @@ Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori
 
 =head1 COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2010 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>.
+This software is copyright (c) 2010-2011 by Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH illusori.co.uk>.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
