@@ -39,4 +39,5 @@ requires:
 resources:
   license: http://dev.perl.org/licenses/
   repository: http://github.com/illusori/Perl-Pod-Weaver-PluginBundle-ReplaceBoilerplate
-version: 1.00
+version: 1.00_01
+

@@ -7,7 +7,7 @@ use Moose;
 extends 'Pod::Weaver::Section::Version';
 with 'Pod::Weaver::Role::SectionReplacer';
 
-our $VERSION = '1.00';
+our $VERSION = '1.00_01';
 
 sub default_section_name { 'VERSION' }
 
@@ -25,7 +25,7 @@ Pod::Weaver::Section::ReplaceVersion - Add or replace a VERSION section.
 
 =head1 VERSION
 
-version 1.00
+version 1.00_01
 
 =head1 OVERVIEW
 
