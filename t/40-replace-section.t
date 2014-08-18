@@ -43,6 +43,12 @@ my @sections = (
         "This will confuse the lawyers.",
         "{{LICENSE}}",
     ],
+    [ 'legal-with-attrs'   => 'ReplaceLegal',
+        'COPYRIGHT AND LICENSE',
+        "License, you must be bleedin' joking?",
+        "This will confuse the lawyers.",
+        "{{LICENSE}}",
+    ],
     );
 
 my @tests = (
@@ -64,11 +70,11 @@ package Module::Name;
 my $this = 'a test';
 END_OF_PERL
 
-my $license = Software::License::Perl_5->new( {
-    holder => 'Sam Graham',
-    } );
-my $license_text = $license->notice();
-chomp( $license_text );
+# my $license = Software::License::Perl_5->new( {
+#     holder => 'Sam Graham',
+#     } );
+# my $license_text = $license->notice();
+# chomp( $license_text );
 
 foreach my $section ( @sections )
 {
@@ -92,6 +98,25 @@ foreach my $section ( @sections )
 
         my $in_pod       = do { local $/; open my $fh, '<', $in_file;  <$fh> };
         my $expected_pod = do { local $/; open my $fh, '<', $out_file; <$fh> };
+
+        my ($license_text, $license);
+        if ( $section->[ 0 ] eq 'legal-with-attrs' )
+        {
+            $license = Software::License::Perl_5->new({
+                year => '2010',
+                holder => 'Some test holder',
+                } );
+            $license_text = $license->notice();
+            chomp( $license_text );
+        }
+        else
+        {
+            $license = Software::License::Perl_5->new( {
+                holder => 'Sam Graham',
+                } );
+            $license_text = $license->notice();
+            chomp( $license_text );
+        }
 
         foreach ( $in_pod, $expected_pod )
         {
@@ -133,7 +158,7 @@ foreach my $section ( @sections )
         #  one-per-paragraph, so won't match the same structure
         #  as if it were parsed... we fudge the parsed structure
         #  to merge the children of that section into a single para.
-        if( $section->[ 0 ] eq 'legal' )
+        if( $section->[ 0 ] eq 'legal' or $section->[ 0 ] eq 'legal-with-attrs' )
         {
             my $command_selector = s_command('head1');
             my $named_selector = sub {
@@ -158,7 +183,6 @@ foreach my $section ( @sections )
                     content => $license_content,
                     } ) ] );
         }
-
 
         #
         #  1:  Test the Pod::Elemental structure for the Pod.

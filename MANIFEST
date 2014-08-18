@@ -22,6 +22,7 @@ t/98-pod.t
 t/99-pod-coverage.t
 t/test_files/40-replace-authors.ini
 t/test_files/40-replace-legal.ini
+t/test_files/40-replace-legal-with-attrs.ini
 t/test_files/40-replace-name.ini
 t/test_files/40-replace-section-with-dupe-section-name.in.pod
 t/test_files/40-replace-section-with-dupe-section-name.out.pod
@@ -34,3 +35,4 @@ t/test_files/50-replace-boilerplate.in.pod
 t/test_files/50-replace-boilerplate.ini
 t/test_files/50-replace-boilerplate.out.pod
 weaver.ini
+META.json
