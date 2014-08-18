@@ -14,6 +14,11 @@ has year => (
   isa => 'Str',
   );
 
+has holder => (
+  is  => 'ro',
+  isa => 'Str',
+  );
+
 around weave_section => sub
 {
     my ( $orig, $self, $document, $input ) = @_;
@@ -23,6 +28,12 @@ around weave_section => sub
         return unless $input->{license};
         $year =~ s/current/(localtime)[ 5 ] + 1900/e;
         $input->{ license }->{ year } = $year;
+    }
+
+    if( my $holder = $self->holder )
+    {
+        return unless $input->{license};
+        $input->{ license }->{ holder } = $holder;
     }
 
     return( $self->$orig( $document, $input ) );
