@@ -41,7 +41,7 @@ version 1.00_01
 
 =head1 OVERVIEW
 
-This is a plugin bundle intended to replace use of [@Default] with equivilent
+This is a plugin bundle intended to replace use of [@Default] with equivalent
 behaviour but with L<Pod::Weaver::Role::SectionReplacer> enabled plugins.
 
 It is nearly equivalent to the following:

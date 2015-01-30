@@ -1,28 +1,32 @@
 NAME
-    Pod::Weaver::PluginBundle::ReplaceBoilerplate - A Pod::Weaver bundle for
-    replacing the boilerplate in a Pod document.
+
+    Pod::Weaver::PluginBundle::ReplaceBoilerplate - A Pod::Weaver bundle
+    for replacing the boilerplate in a Pod document.
 
 VERSION
+
     version 1.00_01
 
 OVERVIEW
+
     This is a plugin bundle intended to replace use of [@Default] with
-    equivilent behaviour but with Pod::Weaver::Role::SectionReplacer enabled
-    plugins.
+    equivilent behaviour but with Pod::Weaver::Role::SectionReplacer
+    enabled plugins.
 
     It is nearly equivalent to the following:
 
       [@CorePrep]
-
+    
       [ReplaceName]
       [ReplaceVersion]
-
+    
       [Leftovers]
-
+    
       [ReplaceAuthors]
       [ReplaceLegal]
 
 INSTALLATION
+
     To install this module, run the following commands:
 
       perl Build.PL
@@ -31,6 +35,7 @@ INSTALLATION
       ./Build install
 
 SUPPORT AND DOCUMENTATION
+
     After installing, you can find documentation for this module with the
     perldoc command.
 
@@ -39,26 +44,29 @@ SUPPORT AND DOCUMENTATION
     You can also look for information at:
 
     RT, CPAN's request tracker
-        http://rt.cpan.org/NoAuth/Bugs.html?Dist=Pod-Weaver-PluginBundle-Rep
-        laceBoilerplate
+
+      http://rt.cpan.org/NoAuth/Bugs.html?Dist=Pod-Weaver-PluginBundle-ReplaceBoilerplate
 
     AnnoCPAN, Annotated CPAN documentation
-        http://annocpan.org/dist/Pod-Weaver-PluginBundle-ReplaceBoilerplate
+
+      http://annocpan.org/dist/Pod-Weaver-PluginBundle-ReplaceBoilerplate
 
     CPAN Ratings
-        http://cpanratings.perl.org/d/Pod-Weaver-PluginBundle-ReplaceBoilerp
-        late
+
+      http://cpanratings.perl.org/d/Pod-Weaver-PluginBundle-ReplaceBoilerplate
 
     Search CPAN
-        http://search.cpan.org/dist/Pod-Weaver-PluginBundle-ReplaceBoilerpla
-        te/
+
+      http://search.cpan.org/dist/Pod-Weaver-PluginBundle-ReplaceBoilerplate/
 
 AUTHOR
+
     Sam Graham <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH
     illusori.co.uk>
 
 COPYRIGHT AND LICENSE
-    This software is copyright (c) 2010 by Sam Graham
+
+    This software is copyright (c) 2010-2011 by Sam Graham
     <libpod-weaver-pluginbundle-replaceboilerplate-perl BLAHBLAH
     illusori.co.uk>.
 
